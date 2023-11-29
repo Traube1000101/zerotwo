@@ -1,27 +1,23 @@
 * { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 0 0.2rem 0.1rem rgb(41, 140, 147), -0.2rem 0 rgb(71, 238, 251),  0.5rem 0.5rem 1rem rgb(0,0,0,0.4);
-}
-
-body {
-    background-position: right top;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    font-size: 16vw;
+  text-shadow: 0 0.2rem 0.1rem rgb(41, 140, 147), -0.2rem 0 rgb(71, 238, 251),  0.5rem 0.5rem 1rem rgb(0,0,0,0.4);
+  font-size: 16vw;
 }
 
 body {
-    min-height: 100vh;
-    min-height: 100svh;
-    text-align: center;
-    background-color: rgb(50, 167, 175);
-    background-image: url('https://images4.alphacoders.com/133/1336066.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  background-position: right top;
+  min-height: 100vh;
+  min-height: 100svh;
+  text-align: center;
+  background-color: rgb(50, 167, 175);
+  background-image: url('https://images4.alphacoders.com/133/1336066.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
