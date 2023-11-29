@@ -1,0 +1,59 @@
+$color: #34a6db;
+$color-darker: darken($color, 5%);
+$ka-color: #ffbb00;
+
+body {
+  background-image: unset;
+  min-height: 100vh;
+  position: relative;
+  background-color: $color;
+  overflow: hidden;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#effect {
+  background-image: linear-gradient(black, black);
+  background-clip: text;
+  color: transparent;
+  text-shadow: unset;
+  user-select: none;
+}
+
+#background {
+  // make background full screen and rotate 45deg
+  transform: rotate(45deg) scale(3);
+
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(0deg, $color-darker, $color-darker 20px, transparent 20px, transparent 40px),
+    repeating-linear-gradient(90deg, $color-darker, $color-darker 20px, transparent 20px, transparent 40px);
+}
+
+.fliege {
+  width: 100%;
+  height: .25rem;
+  border: unset;
+  background-color: $ka-color;
+  position: relative;
+  overflow: initial;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 1rem;
+    width: 1rem;
+    background-color: $ka-color;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
