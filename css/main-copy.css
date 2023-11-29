@@ -3,10 +3,10 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: #34a6db;
+  overflow: hidden;
 }
 
 main {
-  width: max(72rem, 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,7 @@ main {
 }
 
 #background {
+  transform: rotate(45deg) scale(3);
   position: absolute;
   inset: 0;
   z-index: -1;

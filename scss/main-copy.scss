@@ -7,10 +7,10 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: $color;
+  overflow: hidden;
 }
 
 main {
-  width: max(72rem, 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,6 +27,9 @@ main {
 }
 
 #background {
+  // make background full screen and rotate 45deg
+  transform: rotate(45deg) scale(3);
+
   position: absolute;
   inset: 0;
   z-index: -1;
