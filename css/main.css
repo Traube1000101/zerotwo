@@ -2,22 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 16vw;
+  text-align: center;
   text-shadow: 0 0.2rem 0.1rem rgb(41, 140, 147), -0.2rem 0 rgb(71, 238, 251), 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 body {
   background-position: right top;
-}
-
-h1 {
-  font-size: 16vw;
-}
-
-body {
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
   min-height: 100svh;
-  text-align: center;
   background-color: rgb(50, 167, 175);
   background-image: url("https://images4.alphacoders.com/133/1336066.png");
   background-repeat: no-repeat;
