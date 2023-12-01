@@ -54,6 +54,7 @@ h1 {
 }
 
 .text-container {
+  text-align: center;
   color: whitesmoke;
   width: 120vmin;
   max-width: 80vw;
@@ -73,4 +74,6 @@ h1 {
 }
 .text-container p {
   font-size: 3vmin;
+  text-wrap: pretty;
+  text-align: left;
 }
