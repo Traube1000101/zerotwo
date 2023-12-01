@@ -3,24 +3,65 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-shadow: 0 0.2rem 0.1rem rgb(41, 140, 147), -0.2rem 0 rgb(71, 238, 251), 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.4);
-}
-
-body {
-  background-position: right top;
-}
-
-h1 {
-  font-size: 16vw;
 }
 
 body {
   min-height: 100vh;
   min-height: 100svh;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(50, 167, 175);
-  background-image: url("https://images4.alphacoders.com/133/1336066.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-image: url("/assets/img/background-zerotwo/background-zerotwo-3072w-mobile.jpg");
+  background-position: left top;
+}
+@media (min-aspect-ratio: 59/60) {
+  body {
+    background-image: url("/assets/img/background-zerotwo/background-zerotwo-3072w.jpg");
+    background-position: right top;
+  }
+}
+@media (min-aspect-ratio: 17/9) {
+  body {
+    background-position: right top 18%;
+  }
+}
+
+h1 {
+  font-size: 20vmin;
+}
+
+.z-layer:not(:first-child) {
+  filter: brightness(0.7);
+}
+
+.title .z-text {
+  transform: rotateX(5deg);
+  transition: transform 1s;
+}
+.title .z-layer {
+  background: linear-gradient(120deg, hsl(180, 100%, 50%), hsl(210, 100%, 50%), hsl(240, 100%, 50%), hsl(270, 100%, 50%), hsl(300, 100%, 50%), hsl(330, 100%, 50%), hsl(0, 100%, 50%));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50vw;
+  width: 50svw;
+  /* From https://css.glass */
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  font-size: 6vmin;
+  color: rgb(71, 238, 251);
 }
