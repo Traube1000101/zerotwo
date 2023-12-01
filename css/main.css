@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+body main {
   min-height: 100vh;
   min-height: 100svh;
   display: flex;
@@ -19,13 +19,13 @@ body {
   background-position: left top;
 }
 @media (min-aspect-ratio: 59/60) {
-  body {
+  body main {
     background-image: url("/assets/img/background-zerotwo/background-zerotwo-3072w.jpg");
     background-position: right top;
   }
 }
 @media (min-aspect-ratio: 17/9) {
-  body {
+  body main {
     background-position: right top 18%;
   }
 }
