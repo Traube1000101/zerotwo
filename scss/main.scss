@@ -68,13 +68,17 @@ h1 {
 
 .text-container {
   h2 {
-    font-size: 4vmin;
-    margin-top: 2vmin;
+    font-size: 4vh;
+    margin-top: 1.25vmin;
   }
   p {
-    font-size: 3vmin;
+    font-size: 2vh;
     text-wrap: pretty;
     text-align: left;
+  }
+  .z-text {
+    transform: rotateX(10deg);
+    transition: transform 1s;
   }
 
   text-align: center;

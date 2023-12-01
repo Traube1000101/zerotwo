@@ -69,11 +69,15 @@ h1 {
   border: 0.2rem solid rgba(0, 0, 0, 0.2);
 }
 .text-container h2 {
-  font-size: 4vmin;
-  margin-top: 2vmin;
+  font-size: 4vh;
+  margin-top: 1.25vmin;
 }
 .text-container p {
-  font-size: 3vmin;
+  font-size: 2vh;
   text-wrap: pretty;
   text-align: left;
+}
+.text-container .z-text {
+  transform: rotateX(10deg);
+  transition: transform 1s;
 }
