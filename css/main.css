@@ -1,3 +1,10 @@
+.navbar {
+  width: 7vmin;
+  height: 100vh;
+  position: fixed;
+  background-color: darkslategray;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +15,26 @@ html {
   scroll-behavior: smooth;
 }
 
-body main {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: hsl(210, 100%, 50%);
+}
+@supports not (-moz-appearance: none) {
+  body::-webkit-scrollbar-track {
+    background-image: linear-gradient(0deg, hsl(180, 100%, 50%), hsl(210, 100%, 50%), hsl(240, 100%, 50%), hsl(270, 100%, 50%), hsl(300, 100%, 50%), hsl(330, 100%, 50%), hsl(0, 100%, 50%));
+  }
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+body {
   background-color: rgb(50, 167, 175);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,15 +43,23 @@ body main {
   background-position: left top;
 }
 @media (min-aspect-ratio: 59/60) {
-  body main {
+  body {
     background-image: url("/assets/img/background-zerotwo/background-zerotwo-3072w.jpg");
     background-position: right top;
   }
 }
 @media (min-aspect-ratio: 17/9) {
-  body main {
+  body {
     background-position: right top 18%;
   }
+}
+body main {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7vmin;
 }
 
 .z-layer:not(:first-child) {
@@ -44,7 +73,7 @@ body main {
 }
 .title h1 {
   line-height: 125%;
-  font-size: 18vmin;
+  font-size: 17vmin;
   color: whitesmoke;
 }
 .title .z-text {
@@ -75,16 +104,12 @@ body main {
   max-width: 80svw;
   padding: 0.5vmin 3vmin 2.25vmin;
   margin-bottom: 5vmin;
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+  border: 0.2rem solid rgba(0, 0, 0, 0.3);
 }
 .text-container a svg {
-  height: 7vh;
-  width: 7vh;
+  height: 6vh;
+  width: 6vh;
 }
 .text-container h2 {
   font-size: 4vh;
@@ -103,8 +128,16 @@ body main {
   transition: transform 1s;
 }
 
+.text-container, .navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-right: 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
 .scroll-thing {
-  min-height: 92vh;
+  min-height: 93svh;
 }
 .scroll-thing > .title {
   position: sticky !important;
