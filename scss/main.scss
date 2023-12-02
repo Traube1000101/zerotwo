@@ -107,3 +107,18 @@ body main {
   width: 100%;
   height: 200px;
 }
+
+// yama's section
+
+body {
+  position: relative;
+}
+
+.scroll-thing {
+  min-height: 100vh;
+
+  &>.title {
+    position: sticky !important;
+    top: 1rem;
+  }
+}
