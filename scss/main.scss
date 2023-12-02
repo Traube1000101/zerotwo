@@ -4,6 +4,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 $background-dir: "/assets/img/background-zerotwo/";
 body main {
   min-height: 100vh;
@@ -11,7 +15,6 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 
   background-color: rgb(50, 167, 175);
   background-repeat: no-repeat;
@@ -35,15 +38,13 @@ body main {
   filter: brightness(0.7);
 }
 
-
 .title {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-  padding: 50px;
 
   h1 {
-    line-height: 140%;
+    line-height: 125%;
     font-size: 18vmin;
     color: whitesmoke;
   }
@@ -56,7 +57,7 @@ body main {
   .z-layer {
     @supports (not (-moz-appearance: none)) {
       background-image: linear-gradient(
-        120deg,
+        105deg,
         hsl(180, 100%, 50%),
         hsl(210, 100%, 50%),
         hsl(240, 100%, 50%),
@@ -72,10 +73,21 @@ body main {
   }
 }
 
+.feather {
+  color: whitesmoke;
+}
+
 .text-container {
+  a svg {
+    height: 7vh;
+    width: 7vh;
+  }
   h2 {
     font-size: 4vh;
-    margin-top: 1.25vmin;
+    font-weight: lighter;
+  }
+  h2:not(#content) {
+    margin-top: 3vh;
   }
   p {
     font-size: 2vh;
@@ -86,39 +98,34 @@ body main {
     transform: rotateX(10deg);
     transition: transform 1s;
   }
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: whitesmoke;
   width: 120vmin;
   max-width: 80vw;
   max-width: 80svw;
-  margin: 5vmin 0;
-  padding: 0 3vmin 2vmin;
+  padding: 0.5vmin 3vmin 2.25vmin;
+  margin-bottom: 5vmin;
 
-  background-color: rgba($color: black, $alpha: 0.5);
+  background-color: rgba($color: black, $alpha: 0.6);
   border-radius: 1rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 0.2rem solid rgba(0, 0, 0, 0.2);
 }
 
-.test {
-  width: 100%;
-  height: 200px;
-}
-
-// yama's section
-
-body {
-  position: relative;
-}
-
 .scroll-thing {
-  min-height: 100vh;
+  min-height: 92vh;
 
-  &>.title {
+  & > .title {
     position: sticky !important;
-    top: 1rem;
+    //top: 1rem;
   }
+}
+
+#content {
+  padding-top: 3vh;
 }

@@ -4,11 +4,11 @@ var ztitle = new Ztextify(".title", {
 	fade: false,
 	direction: "both",
 	event: "pointer",
-	eventRotation: "10deg"
+	eventRotation: "15deg"
 });
 
-var ztxt = new Ztextify(".text-container h2", {
-	depth: "1.2rem",
+var ztxt = new Ztextify(".text-container h2,.text-container a", {
+	depth: "1.5rem",
 	layers: 6,
 	fade: false,
 	direction: "both"
