@@ -1,41 +1,7 @@
 // Navbar
 @use "navbar";
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: hsl(210, 100%, 50%);
-  @supports (not (-moz-appearance: none)) {
-    background-image: linear-gradient(
-      0deg,
-      hsl(180, 100%, 50%),
-      hsl(210, 100%, 50%),
-      hsl(240, 100%, 50%),
-      hsl(270, 100%, 50%),
-      hsl(300, 100%, 50%),
-      hsl(330, 100%, 50%),
-      hsl(360, 100%, 50%)
-    );
-  }
-}
-
-body::-webkit-scrollbar-thumb {
-  background: transparent;
-  box-shadow: 0 0 0 100vh rgba($color: black, $alpha: 0.6);
-  border-radius: 1rem;
-}
+@use "base";
+@use "defaultDesign";
 
 $background-dir: "/assets/img/background-zerotwo/";
 body {
@@ -54,15 +20,6 @@ body {
 
   @media (min-aspect-ratio: 17/9) {
     background-position: right top 18%;
-  }
-
-  main {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 7vmin;
   }
 }
 
@@ -135,7 +92,7 @@ body {
   align-items: center;
   text-align: center;
   color: whitesmoke;
-  width: 120vmin;
+  width: 200vmin;
   max-width: 80vw;
   max-width: 80svw;
   padding: 0.5vmin 3vmin 2.25vmin;

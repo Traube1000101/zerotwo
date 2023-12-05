@@ -15,6 +15,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body main {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -52,14 +60,6 @@ body {
   body {
     background-position: right top 18%;
   }
-}
-body main {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 7vmin;
 }
 
 .z-layer:not(:first-child) {
@@ -99,7 +99,7 @@ body main {
   align-items: center;
   text-align: center;
   color: whitesmoke;
-  width: 120vmin;
+  width: 200vmin;
   max-width: 80vw;
   max-width: 80svw;
   padding: 0.5vmin 3vmin 2.25vmin;
