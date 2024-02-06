@@ -1,4 +1,4 @@
 # zerotwo
-### This repository contains the source code for a portfolio website focused on advancing my skills in web programming. It utilizes HTML, SCSS and JavaScript, with upcoming additions for PHP and database integration. Planned functionalities include login, account management, download pages and forum/blog posts.
+### This repository contains the source code for a small portfolio website focused on advancing my skills in web programming. It utilizes HTML, SCSS and JavaScript and the [ztext.js](https://bennettfeely.com/ztext/) library.
 ---
-#### Feel free to explore and take a closer look at my ongoing project by visiting [wip.traube.xyz](https://wip.traube.xyz) to see the latest changes.
+#### Feel free to explore and take a closer look at my project by visiting [zerotwo.traube.xyz](https://zerotwo.traube.xyz/).
